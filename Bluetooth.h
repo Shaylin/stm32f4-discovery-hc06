@@ -60,19 +60,6 @@ void USART2_IRQHandler(void)
 }
 
 
-int main(void)
-{
-  initBluetooth();
-
-  while(1)
-  {
-	  if(rcvMessageFlag)
-	  {
-		  rcvMessageFlag=0;
-	  }
-  }
-}
-
 void initBluetooth(void)
 {
 	/*Initialize clocks*/
